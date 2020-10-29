@@ -7,24 +7,15 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
-    "media": {
-      "collection": "file",
-      "via": "related",
-      "plugin": "upload"
-    },
     "client": {
       "type": "string"
-    },
-    "role": {
-      "enum": [
-        "Design",
-        "Development"
-      ],
-      "type": "enumeration"
     },
     "type": {
       "enum": [
@@ -39,6 +30,22 @@
     },
     "technologies": {
       "type": "string"
+    },
+    "role": {
+      "group": "role",
+      "type": "group",
+      "required": true
+    },
+    "media": {
+      "group": "media",
+      "repeatable": true,
+      "type": "group"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "priority": {
+      "type": "integer"
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "Role",
+    "description": ""
+  },
+  "connection": "default",
+  "collectionName": "groups_roles",
+  "attributes": {
+    "Design": {
+      "type": "boolean"
+    },
+    "Develop": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "info": {
+    "name": "Media",
+    "description": ""
+  },
+  "connection": "default",
+  "collectionName": "groups_media",
+  "attributes": {
+    "caption": {
+      "type": "text"
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
